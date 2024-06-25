@@ -1,8 +1,21 @@
+body{
+  background-color: #292929;
+}
+
 .header {
 }
 .profile-img {
 }
+
+.main-title{
+  color: beige;
+  margin: 0;
+}
+
 .container {
+  background-image: url('./img/win-background.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .wrapper {
@@ -11,8 +24,9 @@
   grid-gap: 10px;
 }
 .item {
+  border: 1px solid #292929;
   padding: 10px;
-  background-color: cadetblue;
+  background-color: transparent;
 }
 .list {
 }
