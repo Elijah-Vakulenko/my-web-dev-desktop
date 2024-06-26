@@ -1,9 +1,9 @@
 const GoitFolder = document.querySelector('#goit-collection');
 const crossBtn = document.querySelector('.cross-icon');
-const window = document.querySelector('.modal-window-outside');
+const window = document.querySelector('.mw-goit');
+
 
 GoitFolder.addEventListener('click', windowOpen);
-
 crossBtn.addEventListener('click', windowClose);
 
 function windowOpen() {

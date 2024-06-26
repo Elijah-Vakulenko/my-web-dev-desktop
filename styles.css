@@ -1,40 +1,115 @@
-@import url('./css/icon.css');
-@import url('./css/window.css');
+@import url("./css/icon.css");
+@import url("./css/window.css");
 
+@font-face {
+  font-family: "terminal";
+  src: url("./font/terminal.ttf");
+}
 
-body{
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
   background-color: #292929;
 }
 
-.header {
-}
-.profile-img {
-}
-
-.main-title{
-  color: beige;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
-.container {
-  background-image: url('./img/win-background.jpeg');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 100vh;
-  padding: 10px;
+p:last-child {
+  margin-bottom: 0;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.main-title {
+  font-family: "terminal", sans-serif;
+  font-size: 25px;
+  color: beige;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.container {
+  background-image: url("./img/win-background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+    align-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    flex-direction: column;
+    max-width: 100%;
+    background-size: 100%;
+    /* align-content: space-between; */
+  }
+}
+
 .item {
   border: 1px solid #292929;
   padding: 10px;
   background-color: transparent;
 }
-.list {
-}
-.list-item {
+
+.copy {
+  color: white;
+  text-align: center;
 }

@@ -1,23 +1,41 @@
 .icon {
-    padding: 8px;
-width: 70px;
-height: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  padding: 8px;
+  width: 70px;
+  /* height: 70px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon:hover {
-    background-color: rgba(205, 209, 228, 0.5);
+  background-color: rgba(205, 209, 228, 0.5);
 }
 
 .dev-icon {
-    fill: gold;
+  fill: gold;
+}
+
+.red {
+  fill: red;
+}
+
+.purple {
+  fill: purple;
+}
+
+.blue {
+  fill: blue;
+}
+
+.green {
+  fill: green;
 }
 
 .icon-title {
-    font-size: 10px;
-    margin: 0;
-    text-align: center;
+  color: white;
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
 }
