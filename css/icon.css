@@ -1,0 +1,23 @@
+.icon {
+    padding: 8px;
+width: 70px;
+height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon:hover {
+    background-color: rgba(205, 209, 228, 0.5);
+}
+
+.dev-icon {
+    fill: gold;
+}
+
+.icon-title {
+    font-size: 10px;
+    margin: 0;
+    text-align: center;
+}
