@@ -1,6 +1,7 @@
 .icon {
   padding: 8px;
-  width: 70px;
+  width: 80px;
+  height: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
