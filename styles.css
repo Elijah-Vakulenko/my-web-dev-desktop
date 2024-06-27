@@ -103,7 +103,6 @@ img {
     flex-direction: column;
     max-width: 100%;
     background-size: 100%;
-    /* align-content: space-between; */
   }
 }
 

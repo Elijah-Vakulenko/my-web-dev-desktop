@@ -15,3 +15,4 @@ import './js/modal-git.js';
 import './js/modal-job.js';
 import './js/modal-org.js';
 import './js/modal-eng.js';
+import './js/link.js';
