@@ -30,6 +30,10 @@ p {
   margin: 0;
 }
 
+h2 {
+  padding: 15px 0;
+}
+
 p:last-child {
   margin-bottom: 0;
 }
@@ -119,4 +123,44 @@ img {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 15px;
+}
+
+.list-item {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+.list-item ::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><path d="M20 6L9 17l-5-5"/></svg>')
+    no-repeat center center;
+  background-size: contain;
+}
+.list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.list li ::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><path d="M20 6L9 17l-5-5"/></svg>')
+    no-repeat center center;
+  background-size: contain;
+}
+
+.scroll {
+  overflow: scroll;
 }
