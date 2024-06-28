@@ -88,21 +88,25 @@
   border: 1px solid white;
   border-radius: 5%;
   width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 30px;
   background-color: red;
-  color: white;
 }
 
 .cross-icon:hover {
   background-color: darkred;
 }
 .cross-icon-black {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid white;
   border-radius: 5%;
   width: 30px;
   height: 30px;
   background-color: black;
-  color: white;
 }
 
 .cross-icon-black:hover {

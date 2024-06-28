@@ -3,6 +3,7 @@ const htmlFolder = document.querySelector('#html-collection');
 const crossBtn = document.querySelector('#cross-html');
 const windowHTML = document.querySelector('.mw-html');
 const overlay = document.querySelector('#html-overlay');
+
 htmlFolder.addEventListener('click', openHtml);
 crossBtn.addEventListener('click', closeHtml);
 

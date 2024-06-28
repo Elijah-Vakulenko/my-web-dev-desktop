@@ -12,8 +12,16 @@
   background-color: rgba(205, 209, 228, 0.5);
 }
 
+.white {
+  fill: white;
+}
+
 .dev-icon {
   fill: gold;
+}
+
+.orange {
+  fill: orangered;
 }
 
 .red {
@@ -24,12 +32,20 @@
   fill: purple;
 }
 
+.lightblue {
+  fill: #1378a1;
+}
+
 .blue {
   fill: blue;
 }
 
+.darkblue {
+  fill: #0e2587;
+}
+
 .green {
-  fill: green;
+  fill: #0dc236;
 }
 
 .icon-title {
