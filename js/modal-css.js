@@ -11,6 +11,7 @@ function openCss() {
     windowCSS.classList.add('is-open');
     overlay.classList.remove('hidden');
     setTimeout(() => overlay.classList.add('visible'), 10);
+    document.body.classList.add('no-scroll'); 
 }
 
 function closeCss() {

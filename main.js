@@ -16,3 +16,4 @@ import './js/modal-job.js';
 import './js/modal-org.js';
 import './js/modal-eng.js';
 import './js/link.js';
+import './js/copy.js';
