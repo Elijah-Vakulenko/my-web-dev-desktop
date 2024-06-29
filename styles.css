@@ -81,14 +81,14 @@ img {
   background-image: url("./img/win-background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
   width: 100%;
   padding: 10px;
   display: flex;
-  gap: 15px;
-  flex-direction: column;
+gap: 15px;
+  flex-direction: row;
   flex-wrap: wrap;
   outline: 1px solid greenyellow;
+  justify-content: center;
 }
 
 @media screen and (min-width: 375px) {
@@ -102,8 +102,10 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    flex-direction: row;
+  height: 100vh;
+  justify-content: start;
   }
+
 }
 
 @media screen and (min-width: 1280px) {
