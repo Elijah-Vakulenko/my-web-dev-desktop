@@ -1,5 +1,6 @@
 @import url("./css/icon.css");
 @import url("./css/window.css");
+@import url("./css/reset.css");
 
 @font-face {
   font-family: "terminal";
@@ -13,65 +14,6 @@
 
 html {
   scroll-behavior: smooth;
-}
-
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #292929;
-  font-family: "segoe", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-h2 {
-  padding: 15px 0;
-}
-
-p:last-child {
-  margin-bottom: 0;
-}
-
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: currentColor;
-}
-
-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-footer {
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .main-title {
@@ -90,25 +32,20 @@ footer {
   padding: 10px;
   display: flex;
   gap: 15px;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   outline: 1px solid greenyellow;
-  justify-content: center;
-}
-
-@media screen and (min-width: 375px) {
-  .container {
-    max-width: 375px;
-    align-content: flex-start;
-    margin: 0 auto;
-  }
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin: 0 auto;
+  height: 90vh;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
-    height: 100vh;
-    justify-content: start;
+    flex-direction: row;
+    justify-content: flex-start;
   }
 }
 
@@ -146,7 +83,6 @@ footer {
 
 .list li {
   position: relative;
-  padding-left: 30px;
   margin-bottom: 10px;
 }
 

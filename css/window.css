@@ -10,6 +10,8 @@
   color: white;
   margin: 0 auto;
   border-radius: 5px;
+  height: 90%;
+  width: 90%;
 }
 
 .modal-window-inside {
@@ -35,6 +37,7 @@
   color: white;
   padding: 3px;
   margin: 0 auto;
+  width: 90%;
 }
 
 .modal-terminal-inside {
@@ -47,18 +50,16 @@
   overflow: scroll;
 }
 
+.window-menu {
+  list-style-type: none;
+}
+
 @media screen and (min-width: 375px) {
   .modal-window-outside,
   .modal-terminal-outside {
     min-width: 320px;
-    height: 70vh;
+    height: 80%;
   }
-
-    .window-menu {
-      display: none;
-    }
-
-   
 }
 
 @media screen and (min-width: 768px) {
@@ -67,19 +68,19 @@
     min-width: 720px;
   }
 
-    .window-menu {
-      display: flex;
-      position: fixed;
-      flex-direction: column;
-      border-right: 1px solid lightgray;
-      padding: 10px;
-      gap: 10px;
-      list-style-type: none;
-    }
+  .window-menu {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    border-right: 1px solid lightgray;
+    padding: 10px;
+    gap: 10px;
+    list-style-type: none;
+  }
 
-     .lection-layout {
-       padding-left: 175px;
-     }
+  .lection-layout {
+    padding-left: 200px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -137,5 +138,3 @@
     background-color: #292929;
   }
 }
-
-
