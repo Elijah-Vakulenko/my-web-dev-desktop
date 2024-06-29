@@ -88,12 +88,14 @@ img {
   gap: 15px;
   flex-direction: column;
   flex-wrap: wrap;
+  outline: 1px solid greenyellow;
 }
 
 @media screen and (min-width: 375px) {
   .container {
     max-width: 375px;
     align-content: flex-start;
+    margin: 0 auto;
   }
 }
 
@@ -134,40 +136,38 @@ img {
   position: relative;
   padding-left: 30px;
   margin-bottom: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><path d="M20 6L9 17l-5-5"/></svg>')
+      no-repeat center center;
+    background-size: contain;
+  }
 }
-.list-item ::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><path d="M20 6L9 17l-5-5"/></svg>')
-    no-repeat center center;
-  background-size: contain;
-}
+
 .list li {
   position: relative;
   padding-left: 30px;
   margin-bottom: 10px;
-}
 
-.list li ::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><path d="M20 6L9 17l-5-5"/></svg>')
-    no-repeat center center;
-  background-size: contain;
-}
-
-.scroll {
-  overflow: scroll;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><path d="M20 6L9 17l-5-5"/></svg>')
+      no-repeat center center;
+    background-size: contain;
+  }
 }
 
 .overlay {
@@ -183,22 +183,22 @@ img {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease, visibility 0.5s ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    opacity: 0.8;
+    z-index: -1;
+  }
 }
 
 .hidden {
   display: none;
-}
-
-.overlay::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  opacity: 0.8;
-  z-index: -1;
 }
 
 .overlay.visible {
