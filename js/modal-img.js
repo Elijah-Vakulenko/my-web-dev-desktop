@@ -1,4 +1,3 @@
-
 const imgFolder = document.querySelector('#img-collection');
 const crossBtn = document.querySelector('#cross-img');
 const windowimg = document.querySelector('.mw-img');

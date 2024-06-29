@@ -1,5 +1,5 @@
 const GoitFolder = document.querySelector('#goit-collection');
-const crossBtn = document.querySelector('.cross-icon');
+const crossBtn = document.querySelector('#cross-icon');
 const window = document.querySelector('.mw-goit');
 const overlay = document.querySelector('#goit-overlay');
 

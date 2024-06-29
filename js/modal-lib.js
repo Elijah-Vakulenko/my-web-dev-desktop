@@ -1,8 +1,8 @@
-
 const libFolder = document.querySelector('#lib-collection');
 const crossBtn = document.querySelector('#cross-lib');
 const windowlib = document.querySelector('.mw-lib');
 const overlay = document.querySelector('#lib-overlay');
+
 libFolder.addEventListener('click', openlib);
 crossBtn.addEventListener('click', closelib);
 
