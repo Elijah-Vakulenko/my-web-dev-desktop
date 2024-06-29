@@ -69,6 +69,11 @@ img {
   height: auto;
 }
 
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .main-title {
   font-family: "terminal", sans-serif;
   font-size: 25px;
@@ -78,13 +83,13 @@ img {
 }
 
 .container {
-  background-image: url("./img/win-background.jpeg");
+  background-image: url("./img/win-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   padding: 10px;
   display: flex;
-gap: 15px;
+  gap: 15px;
   flex-direction: row;
   flex-wrap: wrap;
   outline: 1px solid greenyellow;
@@ -102,10 +107,9 @@ gap: 15px;
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-  height: 100vh;
-  justify-content: start;
+    height: 100vh;
+    justify-content: start;
   }
-
 }
 
 @media screen and (min-width: 1280px) {
@@ -138,38 +142,12 @@ gap: 15px;
   position: relative;
   padding-left: 30px;
   margin-bottom: 10px;
-
-  /* &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 24px;
-    height: 24px;
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><path d="M20 6L9 17l-5-5"/></svg>')
-      no-repeat center center;
-    background-size: contain;
-  } */
 }
 
 .list li {
   position: relative;
   padding-left: 30px;
   margin-bottom: 10px;
-
-  /* &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 24px;
-    height: 24px;
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><path d="M20 6L9 17l-5-5"/></svg>')
-      no-repeat center center;
-    background-size: contain;
-  } */
 }
 
 .overlay {
